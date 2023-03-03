@@ -2,7 +2,7 @@ from aiogram import Router
 from aiogram.filters import Command, CommandStart, Text
 from aiogram.types import Message
 from keyboards.keyboards import yes_no_kb, game_kb
-from lexicon.lexicon import LEXICON_RU
+from lexicon.lexicon_ru import LEXICON_RU
 from servises.servises import get_bot_choice, get_winner
 
 
