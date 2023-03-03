@@ -3,8 +3,8 @@ from lexicon.lexicon_ru import LEXICON_RU
 
 
 # Функция возвращающая случайный выбор бота в игре
-def get_bot_choice():
-    return random.choice['rock', 'paper', 'scissors']
+def get_bot_choice() -> str:
+    return random.choice(['rock', 'paper', 'scissors'])
 
 # Функция возвращающая ключ из словаря по которому
 # хранится значение, передаваемое как аргумент - выбор пользоватедля
