@@ -19,11 +19,11 @@ def _normalize_user_answer(user_answer: str) -> str:
 # Функция определяющая победителя
 def get_winner(user_choice: str, bot_choice: str):
     user_choice = _normalize_user_answer(user_choice)
-    rules: dict[str, str] = {'rock': ['scissors', 'lizard'],
-                             'scissors': ['paper', 'lizard'],
-                             'paper': ['rock', 'spok'],
-                             'lizard': ['spok', 'paper'],
-                             'spok': ['scissors', 'rock']}
+    rules: dict[str, [str, str]] = {'rock': ['scissors', 'lizard'],
+                                    'scissors': ['paper', 'lizard'],
+                                    'paper': ['rock', 'spok'],
+                                    'lizard': ['spok', 'paper'],
+                                    'spok': ['scissors', 'rock']}
     if user_choice == bot_choice:
         return 'nobody_won'
     elif bot_choice in rules[user_choice]:
