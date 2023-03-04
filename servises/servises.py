@@ -6,6 +6,7 @@ from lexicon.lexicon_ru import LEXICON_RU
 def get_bot_choice() -> str:
     return random.choice(['rock', 'paper', 'scissors'])
 
+
 # Функция возвращающая ключ из словаря по которому
 # хранится значение, передаваемое как аргумент - выбор пользоватедля
 def _normalize_user_answer(user_answer: str) -> str:
@@ -13,6 +14,7 @@ def _normalize_user_answer(user_answer: str) -> str:
         if LEXICON_RU[key] == user_answer:
             return key
     raise Exception
+
 
 # Функция определяющая победителя
 def get_winner(user_choice: str, bot_choice: str):
