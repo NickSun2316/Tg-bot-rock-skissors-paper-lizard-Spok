@@ -5,9 +5,9 @@ from aiogram import Bot, Dispatcher
 from Config_data.Config import Config, load_config
 from handlers import other_handlers, user_handlers
 
-
 # Инициализируем логгер
 logger = logging.getLogger(__name__)
+
 
 # Функция конфигурирования и запуска бота
 async def main():

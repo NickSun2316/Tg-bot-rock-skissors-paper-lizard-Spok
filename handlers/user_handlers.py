@@ -15,7 +15,7 @@ async def process_start_command(message: Message):
 
 
 # Хендлер команды /help
-@router.message(Command(commands=['/help']))
+@router.message(Command(commands=['help']))
 async def process_help_command(message: Message):
     await message.answer(text=LEXICON_RU['/help'], reply_markup=yes_no_kb)
 
